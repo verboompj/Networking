@@ -176,6 +176,7 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 `--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
 
 
+#### 12.	After completing, the first VM is live and running in Dual (IP) Stack:
 
 
 
