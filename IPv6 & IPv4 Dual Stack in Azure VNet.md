@@ -32,7 +32,7 @@ Again add IPv6 as well. Use a /64 mask for the IPv6 address range for the subnet
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv6.png)
 
-##### 4.	4.	Now we switch to Azure Cloud Shell. 
+##### 4.	Now we switch to Azure Cloud Shell. 
 Make sure you select Bash as your shell
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/3azclicloudshell.png)
