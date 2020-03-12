@@ -315,5 +315,5 @@ Add IPv6 Config:
 #### 16.	Verify connectivity using RDP from Backend to Frontend using IPV4 and IPV6 Addresses:
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/6rdsconnect.png)
 
-### Great, now explore your IPV6 options in Azure 😊 ! 
+### Great ! Please further explore your IPV6 options in Azure 😊 ! 
 
