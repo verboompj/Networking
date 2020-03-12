@@ -12,8 +12,8 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 #### Overview 
 1 VNET , dual stack IP ( IPv4 & IPv6 )
-IPv4: 172.16.0.0/20
-IPv6: ace:cab:deca::/48
+* IPv4: 172.16.0.0/20
+* IPv6: ace:cab:deca::/48
 
 ##### IPv4 VNET range : 172.20.0.0/20 
 2 subnets:
