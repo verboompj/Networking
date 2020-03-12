@@ -19,10 +19,29 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 #### Step-by-Step
 
-##### 1.	Create a Resource Group ( I used "IPV6RG" in my case) and select a region (EU West in my case)
+##### 1.	Create a Resource Group 
+I used "IPV6RG" in my case) and select a region (EU West in my case)
 
-##### 2.	Next, create a VNET , I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is IPv6VNET
+##### 2.	Next, create a VNET 
+I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is IPv6VNET
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png)
 
-##### 3.	Add 2 subnets , again add IPv6 as well. Use a /64 mask for the IPv6 address range for the subnets
+##### 3.	Add 2 subnets 
+Again add IPv6 as well. Use a /64 mask for the IPv6 address range for the subnets
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv6.png)
+
+##### 4.	4.	Now we switch to Azure Cloud Shell. 
+Make sure you select Bash as your shell
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/3azclicloudshell.png)
+
+#### 5.	Start with the first VM
+Create a new IP configuration for your VM, BAVM1 in my case (BAck-end VM 1 ) 
+This VM will have a Public IPv4, Private IPv4 and Private IPV6 Address
+The Public IPv4 will be used for RDP Access to the VM 
+First up, the public IP of the first VM, the “Back-end VM 1“ or BAVM1 
+
+
+
