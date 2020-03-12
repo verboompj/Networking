@@ -196,6 +196,8 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/4vmrunning.png)
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/5firstnicveri.png)
 
+See how the NIC treceived 2 DHCP adresses from the Azure VNET, 1 IPv4 and 1 IPv6 
+
 #### 13.	Deploy a second VM in the Frontend Tier , start with the NSG and its rules: 
 
 `az network nsg create \`
