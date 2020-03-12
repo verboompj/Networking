@@ -36,7 +36,13 @@ I used the portal for this. Make sure to check "Add IPV6 address space" in the 2
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png)
 
 ##### 3.	Add 2 subnets 
-Again add IPv6 as well. Use a /64 mask for the IPv6 address range for the subnets
+The first Subnet is called `Frontend` and the second one `Backend`
+* Frontend IPv4 ( 172.20.0.0/24 )
+* Backend IPv4 ( 172.20.1.0/24 )
+
+Again, make sure you check the box for "Add IPv6 address space". Use a /64 mask for the IPv6 address range for the subnets
+* Frontend IPv6 ( ace:cab:deca:fe::/64) 
+* Backend IPv6 ( ace:cab:deca:ba::/64) 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv6.png)
 
