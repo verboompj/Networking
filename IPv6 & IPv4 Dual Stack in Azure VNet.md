@@ -178,5 +178,8 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 
 #### 12.	After completing, the first VM is live and running in Dual (IP) Stack:
 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/4vmrunning.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/5firstnicveri.png)
+
 
 
