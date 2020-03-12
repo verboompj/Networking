@@ -59,4 +59,39 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 
 `--version IPv4`
 
+#### 6.	Next, an NSG for this VM’s NIC 
+`az network nsg create \`
 
+`--name BANSG1  \`
+
+`--resource-group IPV6RG  \`
+
+`--location westeurope`
+
+#### 7.	Add a rule to the NSG, in this case "open" for RDP
+
+`az network nsg rule create \`
+
+`--name allowRdpIn  \`
+
+`--nsg-name BANSG1  \`
+
+`--resource-group IPV6RG  \`
+
+`--priority 100  \`
+
+`--description "Allow Remote Desktop In"  \`
+
+`--access Allow  \`
+
+`--protocol "*"  \`
+
+`--direction Inbound  \`
+
+`--source-address-prefixes "*"  \`
+
+`--source-port-ranges "*"  \`
+
+`--destination-address-prefixes "*"  \`
+
+`--destination-port-ranges 3389`
