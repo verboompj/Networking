@@ -28,7 +28,7 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 
 ##### 1.	Create a Resource Group 
-I named it `IPV6RG` and selected the EU West region
+My resource Group is called `IPV6RG` and I selected the EU West region
 
 ##### 2.	Next, create a VNET 
 I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is `IPv6VNET`
