@@ -181,5 +181,122 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/4vmrunning.png)
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/5firstnicveri.png)
 
+#### 13.	Deploy a second VM in the Frontend Tier , start with the NSG and its rules: 
 
+`az network nsg create \`
+
+`--name FENSG1  \`
+
+`--resource-group IPV6RG  \`
+
+`--location westeurope`
+
+Rules: 
+
+`az network nsg rule create \`
+
+`--name allowRdpIn  \`
+
+`--nsg-name FENSG1  \`
+
+`--resource-group IPV6RG  \`
+ 
+`--priority 100  \`
+
+`--description "Allow Remote Desktop In"  \`
+
+`--access Allow  \`
+
+`--protocol "*"  \`
+
+`--direction Inbound  \`
+
+`--source-address-prefixes "*"  \`
+
+`--source-port-ranges "*"  \`
+
+`--destination-address-prefixes "*"  \`
+
+`--destination-port-ranges 3389`
+
+
+`az network nsg rule create \`
+
+`--name allowAllOut  \`
+
+`--nsg-name FENSG1  \`
+
+`--resource-group IPV6RG  \`
+
+`--priority 300  \`
+
+`--description "Allow All Out"  \`
+
+`--access Allow  \`
+
+`--protocol "*"  \`
+
+`--direction Outbound  \`
+
+`--source-address-prefixes "*"  \`
+
+`--source-port-ranges "*"  \`
+
+`--destination-address-prefixes "*"  \`
+
+`--destination-port-ranges "*"`
+
+#### 14.	The NIC for FEVM1: 
+
+`az network nic create \`
+
+`--name FENIC0  \`
+
+`--resource-group IPV6RG \`
+
+`--network-security-group FENSG1  \`
+
+`--vnet-name IPv6VNET  \`
+
+`--subnet Frontend  \`
+
+`--private-ip-address-version IPv4 \`
+
+Add IPv6 Config: 
+
+`az network nic ip-config create \` 
+
+`--name FEIp6Config_NIC0  \`
+
+`--nic-name FENIC0  \`
+
+`--resource-group IPV6RG \`
+
+`--vnet-name IPv6VNET \`
+
+`--subnet Frontend \`
+
+`--private-ip-address-version IPv6 \`
+
+ 
+#### 15.	And create the second VM:
+
+`az vm create \`
+
+`--name FEVM1 \`
+
+`--resource-group IPV6RG \`
+
+##### `--admin-username [YOUR ADMIN USERNAME] \`
+
+`--nics FENIC0 \`
+
+`--size Standard_E4s_v3 \`
+
+`--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
+
+#### 16.	Verify connectivity using RDP from Backend to Frontend using IPV4 and IPV6 Addresses:
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/6rdsconnect.png)
+
+### Great, now explore your IPV6 options in Azure 😊 ! 
 
