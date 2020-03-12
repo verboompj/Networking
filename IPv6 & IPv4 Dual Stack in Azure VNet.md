@@ -97,3 +97,69 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 `--destination-address-prefixes "*"  \`
 
 `--destination-port-ranges 3389`
+
+#### 8.	Allow outbound communications in the next NSG Rule
+
+`az network nsg rule create \`
+
+`--name allowAllOut  \`
+
+`--nsg-name BANSG1  \` 
+
+`--resource-group IPV6RG  \`
+
+`--priority 300  \`
+
+`--description "Allow All Out"  \`
+
+`--access Allow  \`
+
+`--protocol "*"  \`
+
+`--direction Outbound  \`
+
+`--source-address-prefixes "*"  \`
+
+`--source-port-ranges "*"  \`
+
+`--destination-address-prefixes "*"  \`
+
+`--destination-port-ranges "*"`
+
+#### 9.	Now create the NIC for this VM and configure IPV4
+
+`az network nic create \`
+
+`--name BANIC0  \`
+
+`--resource-group IPV6RG \`
+
+`--network-security-group BANSG1  \`
+
+`--vnet-name IPv6VNET  \`
+
+`--subnet Backend  \`
+
+`--private-ip-address-version IPv4 \`
+
+`--public-ip-address baPublicIP_v4` 
+
+#### 10.	Add the IPv6 configuration to the newly created NIC
+`az network nic ip-config create \`
+
+`--name BAIp6Config_NIC0  \`
+
+`--nic-name BANIC0  \`
+
+`--resource-group IPV6RG \`
+
+`--vnet-name IPv6VNET \`
+
+`--subnet Backend \`
+
+`--private-ip-address-version IPv6 \`
+
+
+
+
+
