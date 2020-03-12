@@ -3,7 +3,7 @@
 Azure supports IPv6 in a broad scope. VNets for instance can be configured for Dual Stack, meaning running IPv4 and IPv6 side by side over the same Virtual Network, just as Virtual Machines connected to a VNet. This How-To is a quick demonstration of what can be setup with minimal efforts.
 
 
-### Goal: To Create 2 VM’s, connected to a VNET, communicating over both ipv4 as well as ipv6.
+### Goal: To Create 2 VM’s, connected to a VNET, communicating over both ipv4 and ipv6.
 
 
 #### Overview 
