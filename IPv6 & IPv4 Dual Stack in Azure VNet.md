@@ -23,7 +23,6 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 2.	Next, create a VNET , I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is IPv6VNET
 
-[alt text][VNET enable IPv6]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png)
 
-[logo]: https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png "VNET enable IPv6"
 
