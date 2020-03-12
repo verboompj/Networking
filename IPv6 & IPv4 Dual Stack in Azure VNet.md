@@ -28,10 +28,10 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 
 ##### 1.	Create a Resource Group 
-I used "IPV6RG" in my case) and select a region (EU West in my case)
+I named it `IPV6RG` and selected the EU West region
 
 ##### 2.	Next, create a VNET 
-I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is IPv6VNET
+I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is `IPv6VNET`
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png)
 
@@ -39,6 +39,8 @@ I used the portal for this. Make sure to check "Add IPV6 address space" in the 2
 Again add IPv6 as well. Use a /64 mask for the IPv6 address range for the subnets
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv6.png)
+
+
 
 ##### 4.	Now we switch to Azure Cloud Shell. 
 Make sure you select Bash as your shell
