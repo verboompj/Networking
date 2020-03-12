@@ -44,7 +44,7 @@ Again, make sure you check the box for "Add IPv6 address space". Use a /64 mask 
 * Frontend IPv6 ( ace:cab:deca:fe::/64) 
 * Backend IPv6 ( ace:cab:deca:ba::/64) 
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv6.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2addsubnetipv61.png)
 
 
 
