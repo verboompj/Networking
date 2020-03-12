@@ -159,6 +159,22 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 
 `--private-ip-address-version IPv6 \`
 
+#### 11.	Create a VM , in this case BAVM1, that uses the newly created NIC , NSG and IP configuration
+
+`az vm create \`
+
+`--name BAVM1 \`
+
+`--resource-group IPV6RG \`
+
+##### `--admin-username [YOUR ADMIN USERNAME]  \`
+
+`--nics BANIC0 \`
+
+`--size Standard_E4s_v3 \`
+
+`--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
+
 
 
 
