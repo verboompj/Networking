@@ -5,36 +5,36 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 
 
-### Goal: To Create 2 VM’s, connected to a VNET, communicating over both ipv4 and ipv6.
+## Goal: To Create 2 VM’s, connected to a VNET, communicating over both ipv4 and ipv6.
 
        
 
 
-#### Overview 
+### Overview 
 1 VNET , dual stack IP ( IPv4 & IPv6 )
 * IPv4: 172.16.0.0/20
 * IPv6: ace:cab:deca::/48
 
-##### IPv4 VNET range : 172.20.0.0/20 
+#### IPv4 VNET range : 172.20.0.0/20 
 2 subnets:
 * Frontend ( 172.20.0.0/24 )
 * Backend ( 172.20.1.0/24 )
 
-##### IPV6 VNET range: ace:cab:deca::/48
+#### IPV6 VNET range: ace:cab:deca::/48
 * Frontend ( ace:cab:deca:fe::/64) ( fe for frontend works nicely here 😊 )
 * Backend ( ace:cab:deca:ba::/64) ( ba for backend) 
 
-### Step-by-Step
+## Step-by-Step
 
-##### 1.	Create a Resource Group 
+#### 1.	Create a Resource Group 
 My resource Group is called `IPV6RG` and I selected the EU West region
 
-##### 2.	Next, create a VNET 
+#### 2.	Next, create a VNET 
 I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is `IPv6VNET`
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv61.png)
 
-##### 3.	Add 2 subnets 
+#### 3.	Add 2 subnets 
 The first Subnet is called `Frontend` and the second one `Backend`
 * Frontend IPv4 ( 172.20.0.0/24 )
 * Backend IPv4 ( 172.20.1.0/24 )
@@ -47,7 +47,7 @@ Again, make sure you check the box for "Add IPv6 address space". Use a /64 mask 
 
 
 
-##### 4.	Now we switch to Azure Cloud Shell. 
+#### 4.	Now we switch to Azure Cloud Shell. 
 Make sure you select Bash as your shell
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/3azclicloudshell.png)
