@@ -39,8 +39,11 @@ Make sure you select Bash as your shell
 
 #### 5.	Start with the first VM
 Create a new IP configuration for your VM, BAVM1 in my case (BAck-end VM 1 ) 
+
 This VM will have a Public IPv4, Private IPv4 and Private IPV6 Address
+
 The Public IPv4 will be used for RDP Access to the VM 
+
 First up, the public IP of the first VM, the “Back-end VM 1“ or BAVM1 
 
 Copy/Paste these lines as a whole to your Cloud Shell:
@@ -69,7 +72,6 @@ Copy/Paste these lines as a whole to your Cloud Shell:
 `--location westeurope`
 
 #### 7.	Add a rule to the NSG, in this case "open" for RDP
-
 `az network nsg rule create \`
 
 `--name allowRdpIn  \`
