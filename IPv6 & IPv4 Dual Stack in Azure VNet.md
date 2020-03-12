@@ -7,6 +7,7 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 ### Goal: To Create 2 VM’s, connected to a VNET, communicating over both ipv4 and ipv6.
 
+       
 
 
 #### Overview 
