@@ -33,7 +33,7 @@ I named it `IPV6RG` and selected the EU West region
 ##### 2.	Next, create a VNET 
 I used the portal for this. Make sure to check "Add IPV6 address space" in the 2nd tab. The name I used is `IPv6VNET`
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv6.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1vnetaddipv61.png)
 
 ##### 3.	Add 2 subnets 
 The first Subnet is called `Frontend` and the second one `Backend`
