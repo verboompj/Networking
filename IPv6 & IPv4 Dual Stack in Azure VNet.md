@@ -44,11 +44,11 @@ The Public IPv4 will be used for RDP Access to the VM
 First up, the public IP of the first VM, the “Back-end VM 1“ or BAVM1 
 
 `az network public-ip create \`
-'--name baPublicIP_v4  \'
-'--resource-group IPV6RG  \'
-'--location westeurope  \'
-'--sku STANDARD  \'
-'--allocation-method static  \'
-'--version IPv4'
+`--name baPublicIP_v4  \`
+`--resource-group IPV6RG  \`
+`--location westeurope  \`
+`--sku STANDARD  \`
+`--allocation-method static  \`
+`--version IPv4`
 
 
