@@ -24,7 +24,7 @@ Azure supports IPv6 in a broad scope. VNets for instance can be configured for D
 
 
 
-#### Step-by-Step
+### Step-by-Step
 
 
 ##### 1.	Create a Resource Group 
