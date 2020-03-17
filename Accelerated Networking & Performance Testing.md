@@ -9,6 +9,8 @@ In this article i will show how to create an accelerated NIC and do some network
 
 Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli 
 
+#### Tools and Tests
+
 I'll be using iperf3 (www.iperf.fr) for network bandwidth testing and NTttcp as well
 
 For my tests i have created 4 VM's, 2 with and 2 withoud Accelerated Networking enabled on their NIC. 
