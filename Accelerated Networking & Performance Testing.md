@@ -33,6 +33,8 @@ The available bandwidth per VM series is described at [Microsoft Docs](https://d
 You can choose later VM series such as the DSv3 or ESv3 for even higher aggregated bandwidth per VM. 
 In this case the DSv2 series: 
 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/18azdsv2sizes.PNG)
+
 ### Deployment Step-by-Step
 
 As said, I re-used my previous deployment with some minor changes. 
