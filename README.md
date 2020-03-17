@@ -7,6 +7,6 @@ Networking Ideas and Configurations
 
 [Accelerated Networking & Performance Testing](https://github.com/verboompj/Networking/blob/master/Accelerated%20Networking%20&%20Performance%20Testing.md)
 
-[Azure Virtual WAN Step-by-STep using MIKROTIK Router]
+[Azure Virtual WAN Step-by-STep using MIKROTIK Router](https://github.com/verboompj/Networking/blob/master/README.md)
 
-[RDS Gateway as SSL Gateway for RDP traffic to Azure]
+[RDS Gateway as SSL Gateway for RDP traffic to Azure](https://github.com/verboompj/Networking/blob/master/README.md)
