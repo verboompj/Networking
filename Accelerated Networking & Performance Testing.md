@@ -90,7 +90,9 @@ First i downloaded [Iperf3](https://iperf.fr/iperf-download.php) onto both machi
 
 I disabled the firewall for this test.
 
-Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` For a full list of commands run ` iperf3 -h`  
+Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` 
+
+For a full list of commands run ` iperf3 -h`  
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/11iperfser.png)
 
