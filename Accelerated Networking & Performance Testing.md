@@ -25,7 +25,7 @@ The available bandwidth per VM series is described at [Microsoft Docs](https://d
 You can choose later VM series such as the DSv3 or ESv3 for even higher aggregated bandwidth per VM. 
 In this case the DSv2 series: 
 
-#### Deployment Step-by-Step
+### Deployment Step-by-Step
 
 As said, I re-used my previous deployment with some minor changes. 
 I used the same IPV6VNET , and used the same subnets : Backend and Frontend.
@@ -56,7 +56,7 @@ The changes in this deployment concern step 9 :
 note the " --accelerated-networking true " 
 I added this for both the NIC's and therefore both the VM's i created for the tests on Accelerated Networking.
 
-The other change is the VM " SKU"  or type:
+The other change is the VM " SKU"  or type in step 11 : 
 
 #### 11.	Create a VM , in this case BAVM2, that uses the newly created NIC , NSG and IP configuration
 
@@ -73,6 +73,14 @@ The other change is the VM " SKU"  or type:
 ##### `--size Standard_DS4_v2 \`
 
 `--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
+
+And thats it, run the same changes on the FEVM1 as well for the 2nd VM in the FrontEnd Subnet
+
+#### Check and verify:
+
+Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Adresses 
+
+
 
 
 
