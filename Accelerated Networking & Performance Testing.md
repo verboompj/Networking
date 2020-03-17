@@ -84,11 +84,11 @@ Accelerated Networking is ON for the new VM's, and they both received IPv4 and I
 
 ## lets push some packets !
 
-I'll start with the basic, Non accelerated VM's , so the VM's without Accelerated Networking enabled.
+I'll start with the basic, non-accelerated VM's, so the VM's without Accelerated Networking enabled on their respective Network Cards.
 
-First i downloaded [Iperf3](https://iperf.fr/iperf-download.php) onto both machines and extracted the files.
+First, download [Iperf3](https://iperf.fr/iperf-download.php) onto both machines and extracted the files.
 
-I disabled the firewall for this test.
+I disabled the firewall for this test, you could ofcourse make an exception in the firewall rules as well.
 
 Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` 
 
