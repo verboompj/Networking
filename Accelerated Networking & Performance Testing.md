@@ -10,11 +10,11 @@ In this article i will show how to create an accelerated NIC and do some network
 Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli 
 In short, the benefits are: 
 
-##### * Lower Latency / Higher packets per second (pps): 
+* ##### Lower Latency / Higher packets per second (pps): 
 Removing the virtual switch from the datapath removes the time packets spend in the host for policy processing and increases the number of packets that can be processed inside the VM.
-##### * Reduced jitter: 
+* ##### Reduced jitter: 
 Virtual switch processing depends on the amount of policy that needs to be applied and the workload of the CPU that is doing the processing. Offloading the policy enforcement to the hardware removes that variability by delivering packets directly to the VM, removing the host to VM communication and all software interrupts and context switches.
-##### * Decreased CPU utilization: 
+* ##### Decreased CPU utilization: 
 Bypassing the virtual switch in the host leads to less CPU utilization for processing network traffic.
 
 
