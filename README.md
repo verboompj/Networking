@@ -9,4 +9,4 @@ Networking Ideas and Configurations
 
 [Azure Virtual WAN Step-by-Step using MIKROTIK Router](https://github.com/verboompj/Networking/blob/master/README.md)
 
-[Using RDS Gateway to tunnel RDP traffic to Azure via SSL](https://github.com/verboompj/Networking/blob/master/README.md)
+[Using RDS Gateway to tunnel RDP traffic to Azure via SSL]()
