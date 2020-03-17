@@ -9,14 +9,14 @@ In this article i will show how to create an accelerated NIC and do some network
 
 Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli 
 
-#### Tools and Tests
+### Tools and Tests
 
 I'll be using iperf3 (www.iperf.fr) for network bandwidth testing and NTttcp as well
 
 For my tests i have created 4 VM's, 2 with and 2 withoud Accelerated Networking enabled on their NIC. 
 I choose to re-run my scripts from my previous Step-by-Step,  [IPv6 & IPv4 Dual Stack in Azure VNet](https://github.com/verboompj/Networking/blob/master/IPv6%20%26%20IPv4%20Dual%20Stack%20in%20Azure%20VNet.md) with 2 changes. 
 
-#### Changes in setup
+### Changes in setup
 
 * 1 Accelerated Networking is enabled on 2 of the 4 VM's I deployed for this test.
 
@@ -76,11 +76,11 @@ The other change is the VM " SKU"  or type in step 11 :
 
 And thats it, run the same changes on the FEVM1 as well for the 2nd VM in the FrontEnd Subnet
 
-#### Check and verify:
+### Check and verify:
 
 Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Adresses 
 
-
+### lets push some packets !
 
 
 
