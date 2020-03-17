@@ -82,6 +82,14 @@ Accelerated Networking is ON for the new VM's, and they both received IPv4 and I
 
 ### lets push some packets !
 
+First i downloaded [Iperf3](https://iperf.fr/iperf-download.php) onto both machines and extracted the files.
+
+I disabled the firewall for this test.
+
+Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` 
+
+For a full list of commands run ` iperf3 -h`  
+
 
 
 `NTttcp -s -6 -m 64,*,ace:cab:deca:fe::4 -t 300`
