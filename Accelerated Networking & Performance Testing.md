@@ -47,7 +47,7 @@ The changes in this deployment concern step 9 :
 
 `--subnet Backend  \`
 
-##### `--accelerated-networking true
+##### `--accelerated-networking true \` 
 
 `--private-ip-address-version IPv4 \`
 
