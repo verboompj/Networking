@@ -25,7 +25,54 @@ The available bandwidth per VM series is described at [Microsoft Docs](https://d
 You can choose later VM series such as the DSv3 or ESv3 for even higher aggregated bandwidth per VM. 
 In this case the DSv2 series: 
 
+#### Deployment Step-by-Step
+
 As said, I re-used my previous deployment with some minor changes. 
+I used the same IPV6VNET , and used the same subnets : Backend and Frontend.
+They have been setup for both IPv4 and IPv6, and I'll mainly be testing using IPv6
+
+The changes in this deployment concern step 9 : 
+
+#### 9.	Now create the NIC for this VM and configure IPV4
+
+`az network nic create \`
+
+`--name BANIC0  \`
+
+`--resource-group IPV6RG \`
+
+`--network-security-group BANSG1  \`
+
+`--vnet-name IPv6VNET  \`
+
+`--subnet Backend  \`
+
+##### `--accelerated-networking true
+
+`--private-ip-address-version IPv4 \`
+
+`--public-ip-address baPublicIP_v4` 
+
+note the " --accelerated-networking true " 
+I added this for both the NIC's and therefore both the VM's i created for the tests on Accelerated Networking.
+
+The other change is the VM " SKU"  or type:
+
+#### 11.	Create a VM , in this case BAVM2, that uses the newly created NIC , NSG and IP configuration
+
+`az vm create \`
+
+`--name BAVM1 \`
+
+`--resource-group IPV6RG \`
+
+##### `--admin-username [YOUR ADMIN USERNAME]  \`
+
+`--nics BANIC0 \`
+
+##### `--size Standard_DS4_v2 \`
+
+`--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
 
 
 
