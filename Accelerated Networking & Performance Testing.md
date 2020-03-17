@@ -82,13 +82,33 @@ Accelerated Networking is ON for the new VM's, and they both received IPv4 and I
 
 ### lets push some packets !
 
+I'll start with the basic, Non accelerated VM's , so the VM's without Accelerated Networking enabled.
+
 First i downloaded [Iperf3](https://iperf.fr/iperf-download.php) onto both machines and extracted the files.
 
 I disabled the firewall for this test.
 
-Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` 
+Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` For a full list of commands run ` iperf3 -h`  
 
-For a full list of commands run ` iperf3 -h`  
+[img]
+
+On the BAVM1 I ran the socalled Client mode , with the following parameters: `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6` 
+* the `-b 0` means -b for Bandwidth, 0 for unlimited
+* the `-P 1` for the number of parralel running flows / Streams the client initiates
+* and the `-6` to force connectivity over IPv6 
+
+[img]
+
+The results show a 1.7Gbps of bandwidth consumed by iperf. Not quite the 6Gbps the VM has available on Aggregated bandwidth.
+This has to do with the number of streams that iperf uses, and the limits on the NIC that come with running a single stream.
+If we re-run iperf to leverage 8 parralel streams, watch what happends:
+
+`iperf3 -c ace:cab:deca:fe::5 -b 0 -P 8 -6` 
+
+[img]
+
+We hit the defined limits as described for this specific VM type.
+
 
 
 
