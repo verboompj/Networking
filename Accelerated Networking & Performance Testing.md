@@ -10,9 +10,7 @@ In this article i will show how to create an accelerated NIC and do some network
 Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli 
 In short, the benefits are: 
 
-* ##### Lower Latency 
-* ##### Reduced jitter 
-* ##### Decreased CPU utilization
+* ##### Lower Latency * ##### Reduced jitter * ##### Decreased CPU utilization
 
 And it does all this magic by bypassing the virtual switch in the host , offloading directly to the physical NIC of the Host machine your VM is running on.
 
