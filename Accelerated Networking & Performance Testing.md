@@ -18,12 +18,12 @@ I choose to re-run my scripts from my previous Step-by-Step,  [IPv6 & IPv4 Dual 
 
 #### Changes in setup
 
-* 1 As VM type i selected the D4S-v2 Instances. These VM types have plenty of Bandwidth for testing: 6 Gbps aggregated NIC performance. 
+* 1 Accelerated Networking is enabled on 2 of the 4 VM's I deployed for this test.
+
+* 2 As VM type i selected the D4S-v2 Instances. These VM types have plenty of Bandwidth for testing: 6 Gbps aggregated NIC performance. 
 The available bandwidth per VM series is described at [Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series).
 You can choose later VM series such as the DSv3 or ESv3 for even higher aggregated bandwidth per VM. 
 In this case the DSv2 series: 
-
-* 2 Accelerated Networking is enabled on 2 of the 4 VM's I deployed for this test.
 
 As said, I re-used my previous deployment with some minor changes. 
 
