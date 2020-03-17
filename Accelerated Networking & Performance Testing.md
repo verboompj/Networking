@@ -123,7 +123,7 @@ If we re-run iperf to leverage 8 parallel streams, watch what happens:
 
 Now we simply hit the defined limits of this vm,  as documented, at 6Gbps.
 
-Now lets run the same test on a VM with Accelerated Networking Enabled. I'll run the same Single Stream test side-by-side :
+Now lets run the same test on a VM with Accelerated Networking Enabled. I'll run the same single stream test side-by-side :
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6`  
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/14tcpsingsbs.png)
