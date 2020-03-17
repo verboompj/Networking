@@ -92,7 +92,7 @@ And that's it, run the same changes on the FEVM1 as well for the 2nd VM in the F
 
 ### Check and verify:
 
-Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Addresses 
+Accelerated Networking is "Enabled" for the new VM's, and they both received IPv4 and IPv6 Addresses 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/10accnw.png)
 
