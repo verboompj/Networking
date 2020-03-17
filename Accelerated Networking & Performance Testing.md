@@ -64,10 +64,13 @@ The changes in this deployment concern step 9 :
 
 `--public-ip-address baPublicIP_v4` 
 
-note the " --accelerated-networking true " 
+##### note the " --accelerated-networking true " 
+
 I added this for both the NIC's and therefore both the VM's i created for the tests on Accelerated Networking.
 
-The other change is the VM " SKU"  or type in step 11 : 
+The other change is the VM "SKU"  or size in step 11 : 
+
+
 
 #### 11.	Create a VM , in this case BAVM2, that uses the newly created NIC , NSG and IP configuration
 
