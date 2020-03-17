@@ -16,6 +16,8 @@ In short, the benefits are:
 
 And it does all this magic by bypassing the virtual switch in the VM Host , offloading directly to the physical NIC of the Host machine your VM is running on.
 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/19accelerated-networking-benefit.png)
+
 
 ### Tools and Tests
 
@@ -145,7 +147,9 @@ iperf allows us to test UDP streams as well, again a side-by-side compare of an 
 
 Here the difference is even greater, showing an increase of a factor 4 over the non-accelerated VM.
 
+## Conclusion
 
+Azure VM's can greatly benefit from Accelerated Networking, and the best thing is : Its free :-) Try it yourself.
 
 
 
