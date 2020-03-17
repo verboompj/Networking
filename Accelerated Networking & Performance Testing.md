@@ -14,7 +14,7 @@ In short, the benefits are:
 * Reduced jitter 
 * Decreased CPU utilization
 
-And it does all this magic by bypassing the virtual switch in the host , offloading directly to the physical NIC of the Host machine your VM is running on.
+And it does all this magic by bypassing the virtual switch in the VM Host , offloading directly to the physical NIC of the Host machine your VM is running on.
 
 
 ### Tools and Tests
