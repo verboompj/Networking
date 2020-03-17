@@ -92,7 +92,8 @@ Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` For a full l
 
 [img]
 
-On the BAVM1 I ran the socalled Client mode , with the following parameters: `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6` 
+On the BAVM1 I ran the socalled Client mode , with the following parameters: 
+`iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6` 
 * the `-b 0` means -b for Bandwidth, 0 for unlimited
 * the `-P 1` for the number of parralel running flows / Streams the client initiates
 * and the `-6` to force connectivity over IPv6 
