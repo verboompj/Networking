@@ -1,4 +1,4 @@
-# This How-To is a followup on IPv6 / Dual Stack Networking in Azure
+# This How-To is a follow-up on IPv6 / Dual Stack Networking in Azure
 
 ## The goal is to setup an accelerated NIC using the CLI and do some network performance testing
 
@@ -13,7 +13,7 @@ Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure
 
 I'll be using iperf3 (www.iperf.fr) for network bandwidth testing.
 
-For my tests i have created 4 VM's, 2 with and 2 withoud Accelerated Networking enabled on their NIC. 
+For my tests i have created 4 VM's, 2 with and 2 without Accelerated Networking enabled on their NIC. 
 I choose to re-run my scripts from my previous Step-by-Step,  [IPv6 & IPv4 Dual Stack in Azure VNet](https://github.com/verboompj/Networking/blob/master/IPv6%20%26%20IPv4%20Dual%20Stack%20in%20Azure%20VNet.md) with 2 changes. 
 
 ### Changes in setup
@@ -74,11 +74,11 @@ The other change is the VM " SKU"  or type in step 11 :
 
 `--image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:latest`
 
-And thats it, run the same changes on the FEVM1 as well for the 2nd VM in the FrontEnd Subnet
+And that's it, run the same changes on the FEVM1 as well for the 2nd VM in the FrontEnd Subnet
 
 ### Check and verify:
 
-Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Adresses 
+Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Addresses 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/10accnw.png)
 
@@ -88,7 +88,7 @@ I'll start with the basic, non-accelerated VM's, so the VM's without Accelerated
 
 First, download [Iperf3](https://iperf.fr/iperf-download.php) onto both machines and extracted the files.
 
-I disabled the firewall for this test, you could ofcourse make an exception in the firewall rules as well.
+I disabled the firewall for this test, you could of course make an exception in the firewall rules as well.
 
 Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` 
 
@@ -100,14 +100,14 @@ On the BAVM1 I ran the so called Client mode , with the following parameters:
 
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6` 
 * the `-b 0` means -b for Bandwidth, 0 for unlimited
-* the `-P 1` for the number of parralel running flows / Streams the client initiates
+* the `-P 1` for the number of parallel running flows / Streams the client initiates
 * and the `-6` to force connectivity over IPv6 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/17nonaccsing.png)
 
 The results show a ~2Gbps of bandwidth consumed by iperf. Not quite the 6Gbps the VM has available on Aggregated bandwidth.
 This has to do with the number of streams that iperf uses, and the limits on the NIC that come with running a single stream.
-If we re-run iperf to leverage 8 parralel streams, watch what happends:
+If we re-run iperf to leverage 8 parallel streams, watch what happens:
 
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 8 -6` 
 
@@ -129,6 +129,9 @@ iperf allows us to test UDP streams as well, again a side-by-side compare of an 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/15udpsbs.png)
 
 Here the difference is even greater, showing an increase of a factor 4 over the non-accelerated VM.
+
+
+
 
 
 
