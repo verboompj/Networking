@@ -137,7 +137,7 @@ Now lets run the same test on a VM with Accelerated Networking Enabled. I'll run
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/14tcpsingsbs.png)
 
-A huge difference on a single stream ! the left VM hits the described limit of 6Gbps in a single stream now. 
+A huge difference on a single stream ! the left VM hits the documented limit set to 6Gbps in a single stream now. 
 Using Accelerated Networking, we see a factor 3 in networking performance in this specific example. 
 
 iperf allows us to test UDP streams as well, again a side-by-side compare of an accelerated vm (left) and non accelerated vm (right)
