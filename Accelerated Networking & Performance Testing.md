@@ -92,7 +92,7 @@ I disabled the firewall for this test.
 
 Next i ran the first VM , FEVM1,  as Server in iperf : ` iperf3 -s` For a full list of commands run ` iperf3 -h`  
 
-[img]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/11iperfser.png)
 
 On the BAVM1 I ran the so called Client mode , with the following parameters: 
 
@@ -101,7 +101,7 @@ On the BAVM1 I ran the so called Client mode , with the following parameters:
 * the `-P 1` for the number of parralel running flows / Streams the client initiates
 * and the `-6` to force connectivity over IPv6 
 
-[img]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/12nonaccsing.png)
 
 The results show a ~2Gbps of bandwidth consumed by iperf. Not quite the 6Gbps the VM has available on Aggregated bandwidth.
 This has to do with the number of streams that iperf uses, and the limits on the NIC that come with running a single stream.
@@ -109,14 +109,14 @@ If we re-run iperf to leverage 8 parralel streams, watch what happends:
 
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 8 -6` 
 
-[img]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/13nonaccmulin.png)
 
 Now we simply hit the defined limits of this vm,  as documented, at 6Gbps.
 
 Now lets run the same test on a VM with Accelerated Networking Enabled. I'll run the same test side-by-side :
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6`  
 
-[img]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/14tcpsingsbs.png)
 
 A huge difference on a single stream ! the left VM hits the described limit of 6Gbps in a single stream now. 
 Using Accelerated Networking, we see a factor 3 in networking performance in this specific example. 
@@ -124,7 +124,7 @@ Using Accelerated Networking, we see a factor 3 in networking performance in thi
 iperf allows us to test UDP streams as well, again a side-by-side compare of an accelerated vm (left) and non accelerated vm (right)
 `iperf3 -c ace:cab:deca:fe::5 -b 0 -6 -u`  
 
-[img]
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/15udpsbs.png)
 
 Here the difference is even greater, showing an increase of a factor 4 over the non-accelerated VM.
 
