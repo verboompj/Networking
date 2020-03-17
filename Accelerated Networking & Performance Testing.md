@@ -5,5 +5,7 @@
 In this step-by-step : [IPv6 & IPv4 Dual Stack in Azure VNet](https://github.com/verboompj/Networking/blob/master/IPv6%20%26%20IPv4%20Dual%20Stack%20in%20Azure%20VNet.md) , we created 2 VMS in an Azure VNet running both IPv4 as well as IPv6 , so a Dual Stack network configuration.
 
 
-In this article i will show how to create an accelerated NIC , as described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli 
+In this article i will show how to create an accelerated NIC , as described here: https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli and do some Ntttcp based performance testing between 2 VMS in 2 subnets within an azure VNet.
+
+
 
