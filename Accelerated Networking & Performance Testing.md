@@ -112,7 +112,8 @@ For a full list of commands run ` iperf3 -h`
 
 On the BAVM1 I ran the so called Client mode , with the following parameters: 
 
-`iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6` 
+`iperf3 -c ace:cab:deca:fe::5 -b 0 -P 1 -6`
+* `-c` for Client, `ace:cab:deca:fe::5` is the IPv6 Address of the Server VM (FEVM1)
 * the `-b 0` means -b for Bandwidth, 0 for unlimited
 * the `-P 1` for the number of parallel running flows / Streams the client initiates
 * and the `-6` to force connectivity over IPv6 
