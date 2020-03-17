@@ -79,6 +79,7 @@ And thats it, run the same changes on the FEVM1 as well for the 2nd VM in the Fr
 ### Check and verify:
 
 Accelerated Networking is ON for the new VM's, and they both received IPv4 and IPv6 Adresses 
+[img]
 
 ### lets push some packets !
 
