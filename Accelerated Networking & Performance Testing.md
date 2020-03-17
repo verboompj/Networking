@@ -11,7 +11,7 @@ Accelerated Networking is described here: https://docs.microsoft.com/en-us/azure
 
 ### Tools and Tests
 
-I'll be using iperf3 (www.iperf.fr) for network bandwidth testing and NTttcp as well
+I'll be using iperf3 (www.iperf.fr) for network bandwidth testing.
 
 For my tests i have created 4 VM's, 2 with and 2 withoud Accelerated Networking enabled on their NIC. 
 I choose to re-run my scripts from my previous Step-by-Step,  [IPv6 & IPv4 Dual Stack in Azure VNet](https://github.com/verboompj/Networking/blob/master/IPv6%20%26%20IPv4%20Dual%20Stack%20in%20Azure%20VNet.md) with 2 changes. 
