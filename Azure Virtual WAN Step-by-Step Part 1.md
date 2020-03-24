@@ -1,7 +1,7 @@
 # Azure Virtual WAN Step-by-Step
 
 Azure Virtual WAN enables customers to leverage Microsoft's global infrastructure as a connectivity backbone. 
-[Check out this great Doc](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
+[Check out this great article on Docs](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
 
 Azure Virtual WAN brings together many Azure cloud connectivity services such as site-to-site VPN , ExpressRoute , point-to-site user VPN into a single operational interface. 
 
