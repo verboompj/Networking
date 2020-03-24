@@ -9,7 +9,7 @@ It should be noted that this Mikrotik device is not on the Validated VPN Devices
 
 For this Lab setup, however, I’m OK with a manual setup. I run multiple VLAN’s that I’d like to hook up to Azure vWan, so the total picture looks like this:
 
--Local IP ranges -Azure IP Ranges (vNets)
-- 192.168.x.0/24 | 10.1.0.0/20
-- 172.16.x.0/24
-- 172.16.x.0/24
+- Local IP ranges - Azure IP Ranges (vNets)
+192.168.x.0/24 | 10.1.0.0/20
+172.16.x.0/24
+172.16.x.0/24
