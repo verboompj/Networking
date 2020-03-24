@@ -104,3 +104,21 @@ Again, we are looking for the IKEv2 based configuration, known as the RouteBased
 Again, we are looking for the IKEv2 based configuration, known as the RouteBased IPSEC configuration.
 So Phase 1 of IKEv2 😊
 
+* Hashing Algorithm: I chose SHA1
+* Encryption Algorithms matching SHA1 : AES128, AES256.
+* Make sure you select the 1024bit Diffie-Hellman Group option , listed as modp1024
+* Note the Lifetime of 28.800 Seconds, or 8 hours in this case.
+* Check NAT traversal checkbox,
+* And verify your default options to match as listed in the screenshot.
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/31.png)
+
+That’s it form an IPSEC configuration standpoint. Next up, a NAT rule in your Firewall config and verifying connectivity !
+
+#### Step 6, NAT rules
+
+In order to route packets from your Azure WAN to local subnets we need to create a SourceNAT Rule.
+In your Webfig, go to IP, and the Firewall
+Go to the NAT tab and click Add New
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/32.png)
