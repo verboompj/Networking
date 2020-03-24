@@ -21,6 +21,8 @@ I’ve created a step by step for setting up a Azure Virtual WAN and, as a part 
 * VPN Sites: The site resource represents your on-premises VPN device and its settings. 
 
 
+
+
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1.png)
 
 #### Step 1, creating a Virtual WAN
