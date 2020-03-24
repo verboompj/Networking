@@ -19,3 +19,11 @@ I’ve created a step by step for setting up a Azure Virtual WAN and, as a part 
 * Hub virtual network connection: The Hub virtual network connection resource is used to connect the hub seamlessly to your Azure virtual network
 * Hub route table: You can create a virtual hub route and apply the route to the virtual hub route table. You can apply multiple routes to the virtual hub route table. 
 * VPN Sites: The site resource represents your on-premises VPN device and its settings. 
+
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1.png)
+
+#### Step 1, creating a Virtual WAN
+
+Create the Virtual Wan overlay service from the Azure marketplace of from the portal directly
+
