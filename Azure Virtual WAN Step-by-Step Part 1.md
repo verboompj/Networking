@@ -42,6 +42,8 @@ Name it, select a region to deploy this hub to and include the VPN Gateway servi
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/3.png)
 
-Select a private IP range for the HUB, make sure it’s non overlapping and fits within your IP plan. The actual vNets in Azure are not part of this range, but should be routable to this HUB IP range. So again, no overlap from Onprem networks or Azure vNets you would like to connect. The actual routing is covered later, and is full mesh by default. If you want to take control of the actual routing rules, add a Routing table. I chose not to in this example.
-Select the number of required Scale Units , Scale units allow you to add capacity per 500Mbit.  
+* Select a private IP range for the HUB, make sure it’s non overlapping and fits within your IP plan. The actual vNets in Azure are not part of this range, but should be routable to this HUB IP range. So again, no overlap from Onprem networks or Azure vNets you would like to connect. 
+* The actual routing is covered later, and is full mesh by default. If you want to take control of the actual routing rules, add a Routing table. I chose not to in this example.
+* Select the number of required Scale Units , Scale units allow you to add capacity per 500Mbit.  
+
 The actual provisioning of the VPN gateway can take upto 30 minutes. This is a background process and the results are displayed under the Health section of your virtual WAN. You can continue whilst this is running in the background
