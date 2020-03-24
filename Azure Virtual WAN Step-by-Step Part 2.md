@@ -26,6 +26,8 @@ Again, I need to do this manual step because of lack of an automation option for
 
 So, lets get started.
 
+#
+
 #### Step 1. IPSEC Policy 
 Login to the Mikrotik Router using Webfig and create a Policy object for all subnets
 On the Mikrotik Webfig, go to IP, and IPsec menu. Click Add New under Policy.
@@ -55,6 +57,8 @@ Repeat this policy setup for each local subnet , if you have more than one local
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/25.png)
 
+#
+
 #### All right, Step 2, Setting up the IPSEC parameters 
 
 The next tab in the Mikrotik Webfig interface brings you to the “Proposals” step, and this actually configures the IKE phase 2 proposal.
@@ -80,3 +84,7 @@ Add the Public IP (SA Dest IP Address of step 1 ) + the /32 mask.
 Select the default profile , IKE2 for the Exchange mode and check the Send INITIAL_CONTACT checkbox
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/28.png)
+
+#
+
+#### Step 3 , Tying it all together
