@@ -8,7 +8,7 @@ OnPremises device ( Router/Firewall) to connect to our Virtual WAN.
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/0.png)
 
 
-I’ll be using a Mikrotik Router (release 6.44.3) , a highly configurable device that can do IKEv2 IPSEC. This allows me to configure a Route Based VPN Configuration .
+I’ll be using a Mikrotik Router (release 6.44.3) , a highly configurable device that can do IKEv2 IPSEC. This allows me to configure a [Route Based VPN Configuration](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#vpntype) .
 
 It should be noted that this Mikrotik device is not on the Validated VPN Devices list, nor on the virtual WAN partner list. In practice this means that it’s a manual configuration, with some more steps involved in setting up the local devices’ configuration, such as setting up routing policies/maps in the local device. Automated deployments make for a much easier configuration of these local/OnPrem devices.
 
