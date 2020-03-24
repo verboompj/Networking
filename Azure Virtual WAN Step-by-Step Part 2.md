@@ -57,8 +57,6 @@ Repeat this policy setup for each local subnet , if you have more than one local
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/25.png)
 
-#
-
 #### All right, Step 2, Setting up the IPSEC parameters 
 
 The next tab in the Mikrotik Webfig interface brings you to the “Proposals” step, and this actually configures the IKE phase 2 proposal.
@@ -72,8 +70,7 @@ Here we need to take the azure preferences into account : [IKE Parameters](https
 
 Hit Apply & OK to close the tab. You can skip the “Groups” tab in the Webfig interface if you choose the default configuration values.
 
-#
-
+#### Step 3 , Peers
 Under the “Peers” tab we need to configure the IKE policy for our Azure vWan Gateway.
 
 Click Add New,
@@ -85,6 +82,22 @@ Select the default profile , IKE2 for the Exchange mode and check the Send INITI
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/28.png)
 
-#
 
-#### Step 3 , Tying it all together
+#### Step 4 , Tying it all together
+All right, we are half way there, the next tab is the Identities Tab in the Webfig interface.
+Here we map the Peers and Policies created earlier and actually use the Pre-Shared-Key (PSK), or Secret in the case of Mikrotik, that we generated when we first created the Azure virtual WAN.
+If you think by now, oh my, what brilliant PSK did I come up again?... No worries, its listed in the VPN Configuration Download file of step 1, under the PSK header:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/29.png)
+
+So, click Add New.
+
+Select the Peer you created in step2, select Pre Shared Key for Authentication Mode, and type in your secret/PSK of your Azure vWan.
+Check if your other settings match the default values as shown in the screenshot:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/30.png)
+
+Next, hit the “Profiles” Tab
+Select the default profile and edit it to match the IKE phase 1(Main Mode) parameters as listed in the previously mentioned doc on [IKE parameters](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)
+Again, we are looking for the IKEv2 based configuration, known as the RouteBased IPSEC configuration.
+
