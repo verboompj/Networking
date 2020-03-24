@@ -47,3 +47,18 @@ Name it, select a region to deploy this hub to and include the VPN Gateway servi
 * Select the number of required Scale Units , Scale units allow you to add capacity per 500Mbit.  
 
 The actual provisioning of the VPN gateway can take upto 30 minutes. This is a background process and the results are displayed under the Health section of your virtual WAN. You can continue whilst this is running in the background
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/4.png)
+
+#### Step 3, create a VPN site
+
+Name your site and supply the public IP address of your local Router as Public IP address
+Add the local site’s IP ranges here, this information will automatically added to the VPN Gateway’s routing table that is part of your virtual HUB (step2) , and hit confirm
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/5.png)
+
+#### Step 4, associate the site with the HUB 
+
+Hit refresh in the VPN Sites overview page , select your site and click New Hub Association
+Next, associate with the HUB created in step2 and supply a PSK passphrase of your liking.
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/6.png)
+
