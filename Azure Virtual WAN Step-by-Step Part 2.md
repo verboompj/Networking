@@ -66,7 +66,9 @@ Here we need to take the azure preferences into account : [IKE Parameters](https
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/27.png)
 
-Hit Apply & OK to close the tab. You can skip the “Groups” tab in the Webfig interface if you choose the default configuration values
+Hit Apply & OK to close the tab. You can skip the “Groups” tab in the Webfig interface if you choose the default configuration values.
+
+#
 
 Under the “Peers” tab we need to configure the IKE policy for our Azure vWan Gateway.
 
