@@ -81,4 +81,12 @@ This process "peers" an existing Azure vNet to the virtual WAN network , allowin
 
 And that’s it ! , now, you can download a VPN configuration from the overview page , the xml file contains the VPN configuration details for your onprem appliance to connect to the virtual WAN
 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/10.png)
 
+#### Step 6, Optional
+You can choose to enable full mesh routing between Branches as well, by selecting the option in the Configuration page
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/11.png)
+
+As you can see its quite easy setting up your first HUB as a part of a full Virtual WAN.
+Next up, setting up your local router or firewall to connect to Azure Virtual WAN in Part 2 
