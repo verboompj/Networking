@@ -14,7 +14,8 @@ I’ve created a step by step for setting up a Azure Virtual WAN and, as a part 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/0.png)
 
 ## Azure Virtual Wan components
-* ##### Virtual WAN: The virtualWAN resource represents a virtual overlay of your Azure network and is a collection of multiple resources. 
+* ##### Virtual WAN : 
+The virtualWAN resource represents a virtual overlay of your Azure network and is a collection of multiple resources. 
 * Hub: A virtual hub is a Microsoft-managed virtual network. The hub contains various service endpoints to enable connectivity from your on-premises network (vpnsite). The hub is the core of your network in a region. There can only be one hub per Azure region. When you create a hub using Azure portal, it creates a virtual hub VNet and a virtual hub vpngateway.
 * Hub virtual network connection: The Hub virtual network connection resource is used to connect the hub seamlessly to your Azure virtual network
 * Hub route table: You can create a virtual hub route and apply the route to the virtual hub route table. You can apply multiple routes to the virtual hub route table. 
