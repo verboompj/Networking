@@ -20,7 +20,7 @@ Local IP ranges | Azure IP Ranges (vNets)
 172.16.x.0/24
 172.16.x.0/24
 
-Note that I’m listing my Azure vNet IP range, not my Azure Virtual HUB IP Range as remote IP range.
+) Note that I’m listing my Azure vNet IP range, not my Azure Virtual HUB IP Range as remote IP range.
 
 Again, I need to do this manual step because of lack of an automation option for my particular router. You can lookup the tasks that Automation would normally take care of by downloading and examining the VPN Configuration File in the Azure Virtual WAN Overview page. 
 
@@ -62,3 +62,19 @@ I choose to edit the Default Proposal that is there by default, and edited it to
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/26.png)
 
+Here we need to take the azure preferences into account : [IKE Parameters](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#ipsec) , and take a look at the IKE phase 2 parameters. Details listed here as the parameters for IKEv2 or RouteBased configuration. Note the SA lifetime of 27.000 seconds or in this case 7.5 hours.
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/27.png)
+
+ Hit Apply & OK to close the tab. You can skip the “Groups” tab in the Webfig interface if you choose the default configuration values
+
+Under the “Peers” tab we need to configure the IKE policy for our Azure vWan Gateway.
+
+Click Add New,
+Give the peer relation a descriptive name,
+
+Add the Public IP (SA Dest IP Address of step 1 ) + the /32 mask.
+
+Select the default profile , IKE2 for the Exchange mode and check the Send INITIAL_CONTACT checkbox
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/28.png)
