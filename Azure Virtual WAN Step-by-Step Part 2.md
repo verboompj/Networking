@@ -30,7 +30,7 @@ So, lets get started.
 Login to the Mikrotik Router using Webfig and create a Policy object for all subnets
 On the Mikrotik Webfig, go to IP, and IPsec menu. Click Add New under Policy.
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/20.png)
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/20.png)
 
 Create a policy for each onprem subnet as shown in the picture.
 
@@ -38,8 +38,8 @@ Add the (private IP) Source and Destination address ranges and mask, and don’t
 
 Next, add the SA source Address : Your Mikrotik’s WAN/Public IP Address (no mask)
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/21.png)
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/21.png)
 
 Next, add the SA Destination address. You can acquire this Azure vWAN IP Address by downloading the VPN configuration file, presented in the Overview page of your Azure Virtual WAN:
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/22.png)
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/22.png)
