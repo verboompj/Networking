@@ -1,6 +1,6 @@
 # Getting started with Azure Virtual WAN Part 2 - Setting Up a Local Device
 
-In my previous article we have setup a basic Azure Virtual WAN. In this write-up I'll continue where we left off and configure a local, 
+In my [previous article](https://github.com/verboompj/Networking/blob/master/Azure%20Virtual%20WAN%20Step-by-Step%20Part%201.md) we have setup a basic Azure Virtual WAN. In this write-up I'll continue where we left off and configure a local, 
 OnPremises device ( Router/Firewall) to connect to our Virtual WAN.
 
 ## Goal: To connect a local site to the Azure Virtual WAN HUB
