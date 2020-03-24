@@ -125,7 +125,49 @@ Go to the NAT tab and click Add New
 
 Make sure the rule is enabled, As Chain select `srcnat`
 
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/33.png)
+
 Src. Address : Your LAN ip Range. In my case, the LAN ip range that my Mikrotik LAN interface is assigned to. `192.168.x.x /24`
 Dst Address: The Azure vNET IP range `10.1.0.0/20`
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/33.png)
+
 Scroll down and check the Accept checkbox
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/34.png)
+
+Hit OK to accept your new NAT entry, and that’s it !
+Again, its worth mentioning that these steps can be part of an automated deployment when selecting a solution by one of our virtual WAN partners.
+
+Specifically mapping Azure vNets and local subnets, these mappings are normally part of the automation option. Check the downloadable VPN Config (step 1) and you will see that all vNET subnets and HUB networks associated with this vWAN are listed in there.
+
+#### Step 7, Verify & Troubleshooting
+Allright, lets do a ping from OnPrem to an Azure host:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/35.png)
+
+Success !
+
+To verify connectivity between your device and Azure vWan, go back to IPsec in the IP menu, and check the Remote Peers tab, and verify a connection is established:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/36.png)
+
+Under Policies, verify the IKEv2 Phase 2 was established for each source/destination mapping:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/37.png)
+
+And lastly in the Overview page of your Azure Virtual WAN , go to Health and verify traffic flowing:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/38.png)
+
+Note that if you change your VPN Gateway configuration , it could again take up to 30 minutes to become fully available again, the status can also be verified under VPN Gateway Status.
+
+#### Troubleshooting 
+1st steps: Reboot your local device, next, try the Attempt connection Repair option of the VPN Sites configuration page in Azure vWan:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/39.png)
+
+Mikrotik can do great logging as well, just add the IPSEC topic to your logging, under System, Logging:
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/40.png)
+
+And consume logs under the Log menu item in Webfig. 
+Have fun ! Drop a comment if you have any questions.
