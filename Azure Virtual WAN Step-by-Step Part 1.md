@@ -59,6 +59,18 @@ Add the local site’s IP ranges here, this information will automatically added
 #### Step 4, associate the site with the HUB 
 
 Hit refresh in the VPN Sites overview page , select your site and click New Hub Association
-Next, associate with the HUB created in step2 and supply a PSK passphrase of your liking.
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/6.png)
+Next, associate with the HUB created in step2 and supply a PSK passphrase of your liking.
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/7.png)
+
+If the association process times out, check if the prior tast was already completed , by checking the Virtual Gateway service Status is reported as `Succeeded` in the virtual WAN’s Health status
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/8.png)
+
+
+#### Step 5 , add a Virtual Network Connection
+
+This process "peers" an existing Azure vNet to the virtual WAN network , allowing communication to and from Azure resources from your VPN sites.
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/9.png)
+And that’s it ! , now, you can download a VPN configuration from the overview page , the xml file contains the VPN configuration details for your onprem appliance to connect to the virtual WAN
+
 
