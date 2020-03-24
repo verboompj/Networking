@@ -26,7 +26,7 @@ Again, I need to do this manual step because of lack of an automation option for
 
 So, lets get started.
 
-#### Step 1. 
+#### Step 1. IPSEC Policy 
 Login to the Mikrotik Router using Webfig and create a Policy object for all subnets
 On the Mikrotik Webfig, go to IP, and IPsec menu. Click Add New under Policy.
 
