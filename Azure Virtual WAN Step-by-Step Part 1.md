@@ -25,7 +25,10 @@ I’ve created a step by step for setting up a Azure Virtual WAN and, as a part 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/1.png)
 
+
+
 #### Step 1, creating a Virtual WAN
 
 Create the Virtual Wan overlay service from the Azure marketplace of from the portal directly
 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/2.png)
