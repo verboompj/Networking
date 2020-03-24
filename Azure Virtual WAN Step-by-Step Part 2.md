@@ -22,7 +22,9 @@ Local IP ranges | Azure IP Ranges (vNets)
 
 Note that I’m listing my Azure vNet IP range, not my Azure Virtual HUB IP Range as remote IP range.
 
-Again, I need to do this manual step because of lack of an automation option for my particular router. You can lookup the tasks that Automation would normally take care of by downloading and examining the VPN Configuration File in the vWAN Overview page. So, lets get started.
+Again, I need to do this manual step because of lack of an automation option for my particular router. You can lookup the tasks that Automation would normally take care of by downloading and examining the VPN Configuration File in the Azure Virtual WAN Overview page. 
+
+So, lets get started.
 
 #### Step 1. 
 Login to the Mikrotik Router using Webfig and create a Policy object for all subnets
