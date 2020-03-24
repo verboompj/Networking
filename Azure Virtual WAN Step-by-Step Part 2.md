@@ -97,7 +97,10 @@ Check if your other settings match the default values as shown in the screenshot
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/30.png)
 
-Next, hit the “Profiles” Tab
+#### Step 5 Next, hit the “Profiles” Tab
 Select the default profile and edit it to match the IKE phase 1(Main Mode) parameters as listed in the previously mentioned doc on [IKE parameters](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)
 Again, we are looking for the IKEv2 based configuration, known as the RouteBased IPSEC configuration.
+
+Again, we are looking for the IKEv2 based configuration, known as the RouteBased IPSEC configuration.
+So Phase 1 of IKEv2 😊
 
