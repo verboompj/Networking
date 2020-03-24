@@ -64,7 +64,7 @@ I choose to edit the Default Proposal that is there by default, and edited it to
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/26.png)
 
-Here we need to take the azure preferences into account : [IKE Parameters](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#ipsec) , and take a look at the IKE phase 2 parameters. Details listed here as the parameters for IKEv2 or RouteBased configuration. Note the SA lifetime of 27.000 seconds or in this case 7.5 hours.
+Here we need to take the azure preferences into account : [IKE Parameters](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#ipsec) , and take a look at the IKE phase 2 parameters. Details listed here as the parameters for IKEv2 or RouteBased configuration. Note the SA lifetime of `27.000 seconds` or in this case 7.5 hours.
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/27.png)
 
@@ -76,9 +76,9 @@ Under the “Peers” tab we need to configure the IKE policy for our Azure vWan
 Click Add New,
 Give the peer relation a descriptive name,
 
-Add the Public IP (SA Dest IP Address of step 1 ) + the /32 mask.
+Add the `Public IP` (SA Dest IP Address of step 1 ) + the /32 mask.
 
-Select the default profile , IKE2 for the Exchange mode and check the Send INITIAL_CONTACT checkbox
+Select the default profile , IKE2 for the Exchange mode and check the `Send INITIAL_CONTACT` checkbox
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/28.png)
 
@@ -104,11 +104,11 @@ Again, we are looking for the IKEv2 based configuration, known as the RouteBased
 Again, we are looking for the IKEv2 based configuration, known as the RouteBased IPSEC configuration.
 So Phase 1 of IKEv2 😊
 
-* Hashing Algorithm: I chose SHA1
-* Encryption Algorithms matching SHA1 : AES128, AES256.
-* Make sure you select the 1024bit Diffie-Hellman Group option , listed as modp1024
-* Note the Lifetime of 28.800 Seconds, or 8 hours in this case.
-* Check NAT traversal checkbox,
+* Hashing Algorithm: I chose `SHA1`
+* Encryption Algorithms matching SHA1 : `AES128, AES256`.
+* Make sure you select the `1024bit Diffie-Hellman Group option` , listed as `modp1024`
+* Note the Lifetime of `28.800` Seconds, or 8 hours in this case.
+* Check `NAT traversal` checkbox,
 * And verify your default options to match as listed in the screenshot.
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/31.png)
@@ -122,3 +122,10 @@ In your Webfig, go to IP, and the Firewall
 Go to the NAT tab and click Add New
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/32.png)
+
+Make sure the rule is enabled, As Chain select `srcnat`
+
+Src. Address : Your LAN ip Range. In my case, the LAN ip range that my Mikrotik LAN interface is assigned to. `192.168.x.x /24`
+Dst Address: The Azure vNET IP range `10.1.0.0/20`
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/33.png)
+Scroll down and check the Accept checkbox
