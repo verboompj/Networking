@@ -20,7 +20,7 @@ Local IP ranges | Azure IP Ranges (vNets)
 172.16.x.0/24
 172.16.x.0/24
 
-) Note that I’m listing my Azure vNet IP range, not my Azure Virtual HUB IP Range as remote IP range.
+*Note that I’m listing my Azure vNet IP range, not my Azure Virtual HUB IP Range as remote IP range.
 
 Again, I need to do this manual step because of lack of an automation option for my particular router. You can lookup the tasks that Automation would normally take care of by downloading and examining the VPN Configuration File in the Azure Virtual WAN Overview page. 
 
