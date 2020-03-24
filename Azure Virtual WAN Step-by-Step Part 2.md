@@ -43,3 +43,22 @@ Next, add the SA source Address : Your Mikrotik’s WAN/Public IP Address (no ma
 Next, add the SA Destination address. You can acquire this Azure vWAN IP Address by downloading the VPN configuration file, presented in the Overview page of your Azure Virtual WAN:
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/22.png)
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/23.png)
+
+Download the file , and look for the IP addresses listed under IpAddresses section as “Instance0” and “Instance1” Pick the first instance(0) address.
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/24.png)
+
+The other settings ( Action, Level, IPSEC protocols and Proposal) should default to the settings as shown in the screenshot. If not adjust your settings to match the values of the previous screenshot.
+Repeat this policy setup for each local subnet , if you have more than one local subnet.
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/25.png)
+
+#### All right, Step 2, Setting up the IPSEC parameters 
+
+The next tab in the Mikrotik Webfig interface brings you to the “Proposals” step, and this actually configures the IKE phase 2 proposal.
+I choose to edit the Default Proposal that is there by default, and edited it to match the right values.
+
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/26.png)
+
