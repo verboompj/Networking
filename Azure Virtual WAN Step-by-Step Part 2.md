@@ -128,6 +128,7 @@ Make sure the rule is enabled, As Chain select `srcnat`
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/33.png)
 
 Src. Address : Your LAN ip Range. In my case, the LAN ip range that my Mikrotik LAN interface is assigned to. `192.168.x.x /24`
+
 Dst Address: The Azure vNET IP range `10.1.0.0/20`
 
 Scroll down and check the Accept checkbox
