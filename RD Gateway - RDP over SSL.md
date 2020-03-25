@@ -36,6 +36,10 @@ I have helped customers with 2 scenario's:
 This is a quick step by step based on the 1st scenario, Setting up a RD Gateway server in Azure, using Azure App Services Domain for the Public Domain , App Services Certificates for the Certificate and Azure KeyVault for the certificate management
 
 
+#### Step 1. Register a Public DNS name 
 
+#### Step 2. Aquire a Certificate
+
+#### Step 3. Export the Certificate using KeyVault
 
 
