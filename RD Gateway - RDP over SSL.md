@@ -27,8 +27,15 @@ I have helped customers with 2 scenario's:
 
 ## Prerequisites
 
-* A Public DNS domain:  $ 15 dollar/year * A certificate : $ 100 dollar/year
-* One or multiple VMS to act as the RDS Gateway Server
+* A Public DNS domain:  $ 15 dollar/year 
+* A certificate : $ 100 dollar/year
+* A Virtual Machine to act as the RDS Gateway Server
+
+### Step-by-Step
+
+This is a quick step by step based on the 1st scenario, Setting up a RD Gateway server in Azure, using Azure App Services Domain for the Public Domain , App Services Certificates for the Certificate and Azure KeyVault for the certificate management
+
+
 
 
 
