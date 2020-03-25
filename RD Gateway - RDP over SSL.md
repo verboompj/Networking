@@ -45,7 +45,8 @@ Same goes for the Certificate, [check it out here](https://azuremarketplace.micr
 #### Step 3. Export the Certificate using KeyVault
 A little bit more complicated, and involves PowerShell, but this great howto will certainly get you there: https://azure.github.io/AppService/2017/02/24/Creating-a-local-PFX-copy-of-App-Service-Certificate.html 
 
-Build your Rd gateway setup. There are already some great how-to's online :
+#### Step 4. Build your RD Gateway deployment.
+There are already some great how-to's online, so i'm not going to cover that in here
 
 https://turbofuture.com/computers/How-To-Setup-a-Remote-Desktop-Gateway-Windows-Server-2016 
 
@@ -53,7 +54,7 @@ https://ryanmangansitblog.com/2013/03/27/deploying-remote-desktop-gateway-rds-20
 
 https://nedimmehic.org/2018/03/26/remote-desktop-services-2016-gateway/ 
 
-Most of these How-ToS use a self signed certificate, in our case we don't have to, as we purchased a domainname and cert.
+Most of these How-To's use a self signed certificate, in our case we don't have to, as we purchased a domainname and cert.
 Select Existing Certificate for all roles/servers in this dialog : and import your Certificate accordingly for all roles
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/54.png)
@@ -62,6 +63,31 @@ Also, i'd like to point out that the server you are deploying the RD Gateway and
 You can choose to install the Connection Broker, RD Gateway and RD Web on a single server.
 If you need the solution to scale, multiple servers per role could be what you need. 
 
+#### Step 5. Client Connections
 
+Make sure that the PC/Desktop you want to leverage thru the RD Gateway has Remote Desktop enabled.
 
+Connecting via Web is possible, again using the `https://[yourdomain]/RDWeb/Pages/en-US/desktops.aspx` link.
+This is , however, using an ActiveX add-in that modern browsers no longer support. I.E.7 still does, and is part of Win 10 ( still) so you can test. 
 
+The alternative , or even better way, is to create an RDP file. Simply run `mstsc` and configure and save your RDP connection.
+Mind the checkbox for 'Use My RD Gateway Credential for the remote computer'
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/56.png)
+
+#### Step 6. Advanced Settings
+
+Both the Web interface as the RDP file allow for customizations such as:
+* Printer Redirection
+* Drive Redirection
+* (USB) PnP Redirection
+* AUdio Redirection
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/55.png)
+
+For the RDP file only:
+* Multi Monitor configurations
+* RemoteFX redirection 
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/58.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/59.png)
