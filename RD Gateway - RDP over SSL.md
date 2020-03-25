@@ -6,6 +6,6 @@ The same solution has always allowed for the option to "Connect to a remote PC" 
 
 `https://[yourdomain]/RDWeb/Pages/en-US/desktops.aspx` 
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/50.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/53.png)
 
 
