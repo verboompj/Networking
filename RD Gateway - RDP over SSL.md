@@ -1,7 +1,7 @@
 # Leverage an RD Gateway Service as SSL termination service between remote users and your Azure or OnPrem Network
 
 
-## Working From Home on the Cheap !
+## Working From Home on the Cheap :-) 
 
 The RD Gateway service has always been able to tunnel RDS traffic over SSL. Its been used as a solution to tunnel RDS traffic from remote users into an (OnPremises) RDS farm.
 
