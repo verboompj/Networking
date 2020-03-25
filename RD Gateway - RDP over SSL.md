@@ -27,9 +27,8 @@ I have helped customers with 2 scenario's:
 
 ## Prerequisites
 
-A Public DNS domain:  $ 15 dollar/year 
-A certificate : $ 100 dollar/year
-One or multiple VMS to act as the RDS Gateway Server
+* A Public DNS domain:  $ 15 dollar/year * A certificate : $ 100 dollar/year
+* One or multiple VMS to act as the RDS Gateway Server
 
 
 
