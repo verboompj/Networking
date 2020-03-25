@@ -13,4 +13,13 @@ That sounds like a cool, and quick solution to allow working from home.
 
 Its not the best managed solution, and connecting to your desktop is a bit clumpsy , but hey , a couple of vrtual servers, a dns name and a $ 100 certificate will get you there.
 
+# 
+
+I have helped customers with 2 scenario's: 
+
+1. Connect to Windows 10 VMS in Azure 
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/50.PNG)
+
+2. Connect to Physical Desktops in an OnPrem network
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/51.PNG)
 
