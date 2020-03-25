@@ -42,4 +42,6 @@ This is a quick step by step based on the 1st scenario, Setting up a RD Gateway 
 
 #### Step 3. Export the Certificate using KeyVault
 
+Build your Rd gateway setup. Some great how-to's online :
+https://turbofuture.com/computers/How-To-Setup-a-Remote-Desktop-Gateway-Windows-Server-2016 
 
