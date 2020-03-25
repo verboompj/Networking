@@ -96,5 +96,7 @@ For the RDP file only:
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/58.png)
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/59.png)
 
+Limiting access to for instance Drives and Drive Mappings can be done using a good old Group Polocy Object.
+
 So that's it, easy , cost effective and leveraging your existing Desktops. 
 Drop a comment , tell me what you think.
