@@ -1,5 +1,5 @@
 # Networking
-Networking Ideas and Configurations
+Networking Ideas and configurations
 
 ## This repo holds Azure based configs and Network designs
 
