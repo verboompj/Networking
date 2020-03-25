@@ -18,8 +18,8 @@ Its not the best managed solution, and connecting to your desktop is a bit clump
 I have helped customers with 2 scenario's: 
 
 1. Connect to Windows 10 VMS in Azure 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/50.PNG)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/50.png)
 
 2. Connect to Physical Desktops in an OnPrem network
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/51.PNG)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/51.png)
 
