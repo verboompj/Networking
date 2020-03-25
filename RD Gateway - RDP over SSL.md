@@ -45,3 +45,7 @@ This is a quick step by step based on the 1st scenario, Setting up a RD Gateway 
 Build your Rd gateway setup. Some great how-to's online :
 https://turbofuture.com/computers/How-To-Setup-a-Remote-Desktop-Gateway-Windows-Server-2016 
 
+Or
+
+https://ryanmangansitblog.com/2013/03/27/deploying-remote-desktop-gateway-rds-2012/
+
