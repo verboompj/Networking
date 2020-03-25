@@ -1,4 +1,4 @@
-# Leverage an RD Gateway Service as SSL termination service between remote users and your Azure or OnPrem Network
+# Leverage an RD Gateway as SSL termination service between remote users and your Azure or OnPrem Network
 
 
 ### Work from Home on the cheap  
