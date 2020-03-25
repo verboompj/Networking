@@ -48,9 +48,9 @@ A little bit more complicated, and involves PowerShell, but this great howto wil
 Build your Rd gateway setup. There are already some great how-to's online :
 
 https://turbofuture.com/computers/How-To-Setup-a-Remote-Desktop-Gateway-Windows-Server-2016 
-Or
+
 https://ryanmangansitblog.com/2013/03/27/deploying-remote-desktop-gateway-rds-2012/
-Or 
+
 https://nedimmehic.org/2018/03/26/remote-desktop-services-2016-gateway/ 
 
 Most of these How-ToS use a self signed certificate, in our case we don't have to, as we purchased a domainname and cert.
