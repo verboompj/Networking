@@ -16,7 +16,7 @@ Its not the best managed solution, and connecting to your desktop is a bit clump
 
 I have helped customers based on 2 different scenario's: 
 
-1. Connect to Windows 10 VMS in Azure 
+1. Connect to Windows 10 VM's (VDI  like) in Azure 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/50.png)
 
 2. Connect to Physical Desktops in an OnPrem network
