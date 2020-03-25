@@ -98,5 +98,6 @@ For the RDP file only:
 
 Limiting access to for instance Drives and Drive Mappings can be done using a good old Group Polocy Object.
 
-So that's it, easy , cost effective and leveraging your existing Desktops. 
+So that's it, easy , cost effective and leveraging your existing Desktops while working from home. 
+
 Drop a comment , tell me what you think.
