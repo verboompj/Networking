@@ -12,7 +12,7 @@ So in essence, this solution could potentially allow you and your users to conne
 
 Its not the best managed solution, and connecting to your desktop is a bit clumpsy , but hey , a couple of vrtual servers, a dns name and a $ 100 certificate will get you there, and you are making use of all the hardware you already have.
 
-If you are looking for a managed, seamlessly integrated sollution with all the bells and whistles, than WIndows Virtual Desktop ,Citrix Cloud or VMWare Horizon View might be more to your liking. 
+If you are looking for a managed, seamlessly integrated solution with all the bells and whistles, Windows Virtual Desktop ,Citrix Cloud or VMWare Horizon View might be more to your liking. 
 
 # 
 
