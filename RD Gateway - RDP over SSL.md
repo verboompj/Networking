@@ -12,6 +12,8 @@ So in essence, this solution could potentially allow you and your users to conne
 
 Its not the best managed solution, and connecting to your desktop is a bit clumpsy , but hey , a couple of vrtual servers, a dns name and a $ 100 certificate will get you there, and you are making use of all the hardware you already have.
 
+If you are looking for a managed, seamlessly integrated sollution with all the bells and whistles, than WIndows Virtual Desktop ,Citrix Cloud or VMWare Horizon View might be more to your liking. 
+
 # 
 
 I have helped customers based on 2 different scenario's: 
@@ -64,10 +66,10 @@ If you need the solution to scale, multiple servers per role could be what you n
 
 #### Step 5. Client Connections
 
-Make sure that the PC/Desktop you want to leverage thru the RD Gateway has Remote Desktop enabled.
+Make sure that the Office PC/Desktops you want to leverage thru this RD Gateway have Remote Desktop enabled locally. You can do so using a Group Policy for instance.
 
 Connecting via Web is possible, again using the `https://[yourdomain]/RDWeb/Pages/en-US/desktops.aspx` link.
-This is , however, using an ActiveX add-in that modern browsers no longer support. I.E.7 still does, and is part of Win 10 ( still) so you can test. 
+This is , however, using an ActiveX add-in that most modern browsers no longer support. I.E.7 still does, and is part of Win 10 ( still) so you can test it there. 
 
 The alternative , or even better way, is to create an RDP file. Simply run `mstsc` and configure and save your RDP connection.
 Mind the checkbox for 'Use My RD Gateway Credential for the remote computer'
@@ -90,3 +92,6 @@ For the RDP file only:
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/58.png)
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/59.png)
+
+So that's it, easy , cost effective and leveraging your existing Desktops. 
+Drop a comment , tell me what you think.
