@@ -75,7 +75,12 @@ Connecting via Web is possible, again using the `https://[yourdomain]/RDWeb/Page
 This is , however, using an ActiveX add-in that most modern browsers no longer support. I.E.7 still does, and is part of Win 10 ( still) so you can test it there. 
 
 The alternative , or even better way, is to create an RDP file. Simply run `mstsc` and configure and save your RDP connection.
-Mind the checkbox for 'Use My RD Gateway Credential for the remote computer'
+
+As Computername use the Local Domain name of your remote Desktop PC.
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/60.png)
+
+Mind the checkbox for 'Use My RD Gateway Credential for the remote computer' on the Advanced tab, Connect from Anywhere settings
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/56.png)
 
