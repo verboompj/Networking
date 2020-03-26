@@ -78,7 +78,7 @@ The alternative , or even better way, is to create an RDP file. Simply run `msts
 
 As Computername use the Local Domain name of your remote Desktop PC.
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/61.png)
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/60.png)
 
 Mind the checkbox for 'Use My RD Gateway Credential for the remote computer' on the Advanced tab, Connect from Anywhere settings
 
