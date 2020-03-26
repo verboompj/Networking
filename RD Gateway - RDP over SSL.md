@@ -76,7 +76,7 @@ This is , however, using an ActiveX add-in that most modern browsers no longer s
 
 The alternative , or even better way, is to create an RDP file. Simply run `mstsc` and configure and save your RDP connection.
 
-As Computername use the Local Domain name of your remote Desktop PC.
+As Computername use the local fqdn of your remote Desktop computer.
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/60.png)
 
