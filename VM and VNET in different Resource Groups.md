@@ -17,7 +17,7 @@ You can display the Resource ID by querying the $Subnet
 
 The results:
 
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/70subnetid.PNG)
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/72subnetid.PNG)
 
 Next, we create the VM and call the variable `SUBNETID` :
 
@@ -43,7 +43,7 @@ Next, we create the VM and call the variable `SUBNETID` :
 
 `  --accelerated-networking true \`
 
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/71vmcreated.PNG)
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/73vmcreated.png)
 
 result :-) 
 
