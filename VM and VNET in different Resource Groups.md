@@ -1,6 +1,7 @@
 # Setting up a VM that connects to a VNET in a different ResourceGroup.
 
-In this example , one would create a VM in ResourceGroup "A" , leveraging a VNET and Subnet that is already present in ResourceGroup "B"
+In this example , one would create a VM in ResourceGroup "A" , leveraging a VNET and Subnet that is already present in ResourceGroup "B".
+
 This is a very common scenario, where for instance the Network Team manages the central VNET and all of its sub-components ( Subnets, IP-Adressing, Gateways, ExpressRoutes, etc), all contained within a specific Resource Group that is subjected to the Azure RBAC model. 
 
 Teams deploying services into the subscription would do so in their own respective ResourceGroups, whilst still leveraging the centrally controlled VNET of ResourceGroup "A" , and leveraging all the services available in that VNET.
