@@ -18,7 +18,7 @@ The results:
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/70subnetid.PNG)
 
-Next, we create the VM and call the variable `SUBNETID` 
+Next, we create the VM and call the variable `SUBNETID` :
 
 `az vm create \`
 
@@ -42,5 +42,7 @@ Next, we create the VM and call the variable `SUBNETID`
 
 `  --accelerated-networking true \`
 
+![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/71vmcreated.PNG)
 
+result :-) 
 
