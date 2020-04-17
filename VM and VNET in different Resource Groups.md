@@ -21,15 +21,25 @@ The results:
 Next, we create the VM and call the variable `SUBNETID` 
 
 `az vm create \`
+
 `  --resource-group mynewrg \`
+
 `  --name myVM18 \`
+
 `  --image UbuntuLTS \`
-`  ## --subnet $SUBNETID \`
+
+#### `  --subnet $SUBNETID \`
+
 `  --admin-username azureuser \`
+
 `  --generate-ssh-keys \`
+
 `  --storage-sku Premium_LRS \`
+
 `  --os-disk-size-gb 50 \`
+
 `  --size Standard_F4s_v2 \`
+
 `  --accelerated-networking true \`
 
 
