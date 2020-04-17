@@ -32,3 +32,5 @@ Next, we create the VM and call the variable `SUBNETID`
 `  --size Standard_F4s_v2 \`
 `  --accelerated-networking true \`
 
+
+
