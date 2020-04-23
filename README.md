@@ -3,7 +3,7 @@ Azure networking concepts and configurations
 
 ![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/nwoverview.PNG)
 
-## This repo holds Azure based configs and Network designs
+## This repo holds Azure based Network configs and designs
 
 [VM and VNET in 2 seperate ResourceGroups](https://github.com/verboompj/Networking/blob/master/VM%20and%20VNET%20in%20different%20Resource%20Groups.md)
 
