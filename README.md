@@ -1,7 +1,8 @@
 # Networking
 Azure networking concepts and configurations
 
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/nwoverview.PNG)
+
+![](https://github.com/verboompj/Networking/blob/master/Pictures/nwoverview.PNG)
 
 ## This repo holds Azure based Network configs and designs
 
