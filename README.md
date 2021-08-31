@@ -6,6 +6,8 @@ Azure networking concepts and configurations
 
 ## This repo holds Azure based Network configs and designs
 
+[Network Devices in M365 Defender](https://github.com/verboompj/Networking/blob/master/Network%20Devices%20M365%20Defender.md)
+
 [VM and VNET in 2 seperate ResourceGroups](https://github.com/verboompj/Networking/blob/master/VM%20and%20VNET%20in%20different%20Resource%20Groups.md)
 
 [RDP over SSL using RD Gateway - Work from home on the cheap](https://github.com/verboompj/Networking/blob/master/RD%20Gateway%20-%20RDP%20over%20SSL.md)
