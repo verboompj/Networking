@@ -21,6 +21,8 @@ https://docs.microsoft.com/en-us/azure/security-center/defender-for-servers-intr
 Now, managing the nodes from a security perspective can be done thru the M365 Defender portal: https://security.microsoft.com/homepage. No M365 licenses required.
 My Linux servers are also enrolled: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-worldwide
 
+And yes I do need to do some homework:
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/M365DE.PNG)
 
 ## Integrating Network devices
 
