@@ -1,6 +1,6 @@
 # This How-To is a quick howto on integrating supported OnPrem network devices in M365 Defender.
 
-Azures hybrid capabilities now extend all the way upto your netowork devices.
+Azures hybrid (security)capabilities now extend all the way upto your network devices.
 https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-devices?view=o365-worldwide
 
 ## Azure Security Center & M365 Defender
