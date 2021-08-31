@@ -35,11 +35,8 @@ Currently, the following operating systems are supported:
 - HPE ArubaOS, Procurve Switch Software 
 - Palo Alto Networks PAN-OS 
 
+I'm using an old Cisco C3560G switch as a test device and after setting it up with an IP and configuring SNMP ( Serial port anyone ? :D ) the scanner picked up the device
 
-![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/19accelerated-networking-benefit.png)
-
-
-
-https://help.ubuntu.com/community/CiscoConsole
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/found2.PNG)
 
 
