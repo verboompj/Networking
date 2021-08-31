@@ -51,6 +51,8 @@ After a few hours, Defender detected my ancient IOS version and its vulnerabilit
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/swi%20detail.PNG)
 
+Zooming on on the actual CVE's related to IOS 12.2: 
+
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/ios%20cve.PNG)
 
 
