@@ -45,7 +45,7 @@ So the device was correctly discovered and picked-up by Defender. However,  to b
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/swinovu.png)
 
-### Update
+### // Update //
 
 After a few hours, Defender detected my ancient IOS version and its vulnerabilities and alerted me on them :-) 
 
