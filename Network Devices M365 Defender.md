@@ -5,7 +5,7 @@ https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/networ
 
 ## Azure Security Center & M365 Defender
 
-Enrolling a device (Server) in Azure Security Center: Azure Defender On- entitles it for Endpoint Protection, in my case Defender for Endpoint on Linux.
+Enrolling a device (Server) in Azure Security Center: Azure Defender On- entitles it for Endpoint Protection, in my case Defender for Endpoint on both Windows and Linux.
 It also enrolls Endpoint Vulnerability Assesments based on the integrated and license-included Qualys agent
 https://docs.microsoft.com/en-us/azure/security-center/defender-for-servers-introduction
 
