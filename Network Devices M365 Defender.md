@@ -40,4 +40,7 @@ I'm using an old Cisco C3560G switch as a test device and after setting it up wi
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/found2.PNG)
 
+So the device was correctly found, but to be fair, Defender has not yet recomended me on this (very) old switch. Yes, this thing was EOL'ed a long time ago by Cisco and the IOS version (12.2) is very outdated as well, but we'll see if Defender picks it up as being eol and reports out on CVE's on IOS 12.2 over the next few hours/days.
+
+![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/swinovu.png)
 
