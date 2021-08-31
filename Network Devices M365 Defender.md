@@ -28,7 +28,12 @@ My Linux servers are also enrolled: https://docs.microsoft.com/en-us/microsoft-3
 To allow vulnerability assesment of OnPrem network devices, deploy the MDATPScanAgent onto a (windows) server in your network. This agent is configured through the M365 Defender portal and can be configued with SNMP settings/credentials and IP ranges to scan. 
 See this great article for deployment details : https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548
 
+Currently, the following operating systems are supported: 
 
+- Cisco IOS, IOS-XE, NX-OS 
+- Juniper JUNOS 
+- HPE ArubaOS, Procurve Switch Software 
+- Palo Alto Networks PAN-OS 
 
 
 ![Screenshot](https://raw.githubusercontent.com/verboompj/Networking/master/Pictures/19accelerated-networking-benefit.png)
