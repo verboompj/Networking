@@ -6,7 +6,7 @@ Azure networking concepts and configurations
 
 ## This repo holds Azure based Network configs and designs
 
-[Entra Global Secure Access](https://github.com/verboompj/EntraGSA/blob/main/Readme.md)
+[Entra Global Secure Access]([https://github.com/verboompj/EntraGSA/blob/main/Readme.md](https://github.com/verboompj/EntraGSA/blob/main/README.md)) 
 
 [Network Devices in M365 Defender](https://github.com/verboompj/Networking/blob/master/Network%20Devices%20M365%20Defender.md)
 
